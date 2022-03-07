@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0">
+	<link rel="stylesheet" type="text/css" href="Calc.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
+	<script src="Calc.js"></script>
+	<title>Calculator</title>
+	
+</head>
+
+<body>
+	<div class="container">
+	<div class="display">
+		<div id="mycal">My Calculator</div></br>
+		<div id="result">0</div>
+	</div>
+	<div class="first-row">
+		<button id="row1-1" onclick="clearAll()">C</button>
+		<button id="row1-2" onclick="backspace()">DEL</button>
+		<button id="row1-3" value="%" onclick="fordisplay('%') ">MOD</button>
+		<button id="row1-4" value="/" onclick="fordisplay('/') " >&#247;</button>
+	</div>
+	<div class="second-row">
+		<button id="row2-1" value="7" onclick="fordisplay('7') ">7</button>
+		<button id="row2-2" value="8" onclick="fordisplay('8') ">8</button>
+		<button id="row2-3" value="9" onclick="fordisplay('9') ">9</button>
+		<button id="row2-4" value="*" onclick="fordisplay('*') " >&times;</button>
+	</div>
+	<div class="third-row">
+		<button id="row3-2" value="5" onclick="fordisplay('5') ">5</button>
+		<button id="row3-3" value="6" onclick="fordisplay('6') ">6</button>
+		<button id="row3-1" value="4" onclick="fordisplay('4') ">4</button>
+		<button id="row3-4" value="-" onclick="fordisplay('-') " >-</button>
+	</div>
+	<div class="fourth-row">
+		<button id="row4-1" value="1" onclick="fordisplay('1') ">1</button>
+		<button id="row4-2" value="2" onclick="fordisplay('2') ">2</button>
+		<button id="row4-3" value="3" onclick="fordisplay('3') ">3</button>
+		<button id="row4-4" value="+" onclick="fordisplay('+') " >+</button>
+	</div>
+	<div class="fifth-row">
+		<button id="row5-1" value="0" onclick="fordisplay('0') ">0</button>
+		<button id="row5-1" value="00" onclick="fordisplay('00') ">00</button>
+		<button id="row5-2" value="." onclick="fordisplay('.') ">.</button>
+		<button id="row5-3" value="=" onclick="equal()" >=</button>
+	</div>
+</div>
+</body>
+
+</html>
